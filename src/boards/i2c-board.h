@@ -30,6 +30,7 @@ extern "C"
 
 #include <stdint.h>
 #include <stdbool.h>
+#include "utilities.h"
 #include "i2c.h"
 
 /*!
