@@ -342,7 +342,7 @@ bool LmHandlerIsBusy( void )
     if( LmHandlerJoinStatus( ) != LORAMAC_HANDLER_SET )
     {
         // The network isn't yet joined, try again later.
-        LmHandlerJoin( );
+        //LmHandlerJoin( );
         return true;
     }
 
