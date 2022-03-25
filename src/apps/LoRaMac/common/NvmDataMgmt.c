@@ -188,21 +188,21 @@ uint16_t NvmDataMgmtRestore( void )
     // Region group 1
     if( NvmmCrc32Check( sizeof( RegionNvmDataGroup1_t ), offset ) == false )
     {
-        //return 0;
+        return 0;
     }
     offset += sizeof( RegionNvmDataGroup1_t );
 
     // Region group 2
     if( NvmmCrc32Check( sizeof( RegionNvmDataGroup2_t ), offset ) == false )
     {
-        //return 0;
+        return 0;
     }
     offset += sizeof( RegionNvmDataGroup2_t );
 
     // Class b
     if( NvmmCrc32Check( sizeof( LoRaMacClassBNvmData_t ), offset ) == false )
     {
-        //return 0;
+        return 0;
     }
     offset += sizeof( LoRaMacClassBNvmData_t );
 
